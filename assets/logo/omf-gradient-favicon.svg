@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="7.09433389%" id="linearGradient-1">
+            <stop stop-color="#9356DC" offset="0%"></stop>
+            <stop stop-color="#FF79DA" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-61.8%" y="-61.8%" width="223.5%" height="223.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset" transform="translate(13.000000, 13.000000)">
+            <g id="Group" transform="translate(8.000000, 8.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" filter="url(#filter-2)" cx="17" cy="17" r="17"></circle>
+                <text id="omf" font-family="Shrikhand-Regular, Shrikhand" font-size="12" font-style="italic" font-weight="normal" fill="#333333">
+                    <tspan x="4" y="21">omf</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
