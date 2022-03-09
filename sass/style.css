@@ -9,8 +9,28 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn-gradient {
+  border: none;
+  border-radius: 2em;
+  padding: 1em 2em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  color: #fff;
+}
+
 footer {
   background-color: #353535;
-  color: green;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
