@@ -21,9 +21,13 @@ ul {
 }
 
 .btn-gradient {
+  font-family: 'Roboto';
+  font-size: 1.2em;
   border: none;
   border-radius: 2em;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
+  font-family: 'Roboto';
+  font-size: 1.2em;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   color: #fff;
