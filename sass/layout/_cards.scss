@@ -1,0 +1,34 @@
+.r-card {
+    width: 100%;
+    background-color: $color-clear;
+    margin-bottom: 1.3em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow-primary;
+    .r-card-illus {
+        position: relative;
+        .r-card--img {
+            width: 100%;
+            border-radius: 1em 1em 0 0;
+            object-fit: cover;
+        }
+        .text-block {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            background-color: $color-accent;
+            color: darken($color-accent, 40%);
+            font-weight: 400;
+            padding: 0.5em 1em;
+            width: fit-content;
+            border-radius: 0.2em;
+        }
+    }
+    .r-card-caption {
+        padding: $padding-general;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -11,83 +11,103 @@
 </head>
 <body>
     <header>
-        <img src="assets/logo/ohmyfood.png" alt="logo 'ohmyfood'">
+        <img src="assets/logo/ohmyfood@2x.svg" alt="logo 'ohmyfood'">
     </header>
     <main>
-        <section id="presentation">
+        <section class="localisation">
             <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
+        </section>
+        <section class="presentation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button class="btn-gradient">Explorer nos restaurants</button>
         </section>
-        <section id="fonctionnement">
+        <section class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div class="etape">
-                <span class="fa-stack fa-2xs">
-                    <i class="fa-solid fa-circle fa-stack-2x"></i>
-                    <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
-                </span>
-                <p><i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant</p>
+            <div class="etapes-wrapper">
+                <div class="etape">
+                    <span class="fa-stack fa-2xs" id="num">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant</p>
+                </div>
+                <div class="etape">
+                    <span class="fa-stack fa-2xs" id="num">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p><i class="fa-solid fa-list-ul"></i> Composez votre menu</p>
+                </div>
+                <div class="etape">
+                    <span class="fa-stack fa-2xs" id="num">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-3 fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p><i class="fa-solid fa-store"></i> Dégustez au restaurant</p>
             </div>
-            <div class="etape">
-                <span class="fa-stack fa-2xs">
-                    <i class="fa-solid fa-circle fa-stack-2x"></i>
-                    <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
-                </span>
-                <p><i class="fa-solid fa-list-ul"></i> Composez votre menu</p>
-            </div>
-            <div class="etape">
-                <span class="fa-stack fa-2xs">
-                    <i class="fa-solid fa-circle fa-stack-2x"></i>
-                    <i class="fa-solid fa-3 fa-stack-1x fa-inverse"></i>
-                </span>
-                <p><i class="fa-solid fa-store"></i> Dégustez au restaurant</p>
             </div>
         </section>
-        <section id="restaurants">
+        <section class="restaurants">
             <h2>Restaurants</h2>
-            <article class="r-card">
-                <div class="r-card-img">
-                    <img src="assets/restaurants/lapalettedgout.jpg" alt="photo de plat gourmet">
-                    <div class="text-block">Nouveau</div>
-                </div>
-                <div class="r-card-txt">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-                <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
-            </article>
-            <article class="r-card">
-                <div class="r-card-img">
-                    <img src="assets/restaurants/lanoteenchantee.jpg" alt="photo de plat gourmet">
-                    <div class="text-block">Nouveau</div>
-                </div>
-                <div class="r-card-txt">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </div>
-                <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
-            </article>
-            <article class="r-card">
-                <div class="r-card-img">
-                    <img src="assets/restaurants/alafrancaise.jpg" alt="photo de plat gourmet">
-                </div>
-                <div class="r-card-txt">
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
-                </div>
-                <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
-            </article>
-            <article class="r-card">
-                <div class="r-card-img">
-                    <img src="assets/restaurants/ledelicedessens.jpg" alt="photo de plat gourmet">
-                </div>
-                <div class="r-card-txt">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                </div>
-                <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
-            </article>
+            <a href="restaurants/lapalettedugout.html">
+                <article class="r-card">
+                    <div class="r-card-illus">
+                        <img src="assets/restaurants/lapalettedgout.jpg" alt="photo de plat gourmet" class="r-card--img">
+                        <div class="text-block">Nouveau</div>
+                    </div>
+                    <div class="r-card-caption">
+                        <div class="r-card-txt">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </article>
+            </a>
+            <a href="restaurants/lanoteenchantee.html">
+                <article class="r-card">
+                    <div class="r-card-illus">
+                        <img src="assets/restaurants/lanoteenchantee.jpg" alt="photo de plat gourmet" class="r-card--img">
+                        <div class="text-block">Nouveau</div>
+                    </div>
+                    <div class="r-card-caption">
+                        <div class="r-card-txt">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </article>
+            </a>
+            <a href="restaurants/alafrancaise.html">
+                <article class="r-card">
+                    <div class="r-card-illus">
+                        <img src="assets/restaurants/alafrancaise.jpg" alt="photo de plat gourmet" class="r-card--img">
+                    </div>
+                    <div class="r-card-caption">
+                        <div class="r-card-txt">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </article>
+            </a>
+            <a href="restaurants/ledelicedessens.html">
+                <article class="r-card">
+                    <div class="r-card-illus">
+                        <img src="assets/restaurants/ledelicedessens.jpg" alt="photo de plat gourmet" class="r-card--img">
+                    </div>
+                    <div class="r-card-caption">
+                        <div class="r-card-txt">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="r-card-icon"><i class="fa-regular fa-heart"></i></div>
+                    </div>
+                </article>
+            </a>
         </section>
     </main>
     <footer>

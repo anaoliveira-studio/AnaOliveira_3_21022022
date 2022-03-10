@@ -1,6 +1,20 @@
+// Charte graphique principale
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-accent: #99E2D0;
-$color-footer: #353535;
-$color-clear: #fff;
+
+// Dégradés
 $color-btn-gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$color-icon-gradient: linear-gradient(0deg, rgba(255,121,218,1) 100%), rgba(147,86,220,1) 0%;
+
+// Greyscale, de plus clair au plus foncé
+$color-clear: #fff;
+$color-light: #f6f6f6;
+$color-dark: #353535;
+$color-darkest: #000;
+
+// Shadows
+$shadow-primary: -2px 2px 10px rgba(0, 0, 0, 0.25);
+
+// Paddings
+$padding-general: 0.5em 1em;

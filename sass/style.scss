@@ -1,11 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import "utils/variables";
-@import "base/base";
+@import "base/general";
+@import "layout/headers";
+@import "layout/cards";
+@import "layout/footer";
 @import "components/buttons";
  
 
-footer {
-    background-color: $color-footer;
-    color: $color-clear;
+.localisation {
+    padding: 0.5em 5%;
+    display: flex;
+    justify-content: center;
+    background-color: darken($color-light, 5%);
+    color: $color-dark;
+}
+
+.presentation {
+    background-color: $color-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1, p {
+        text-align: center;
+    }
+    h1 {
+        color: $color-darkest;
+    }
+    p{
+        color: $color-dark;
+    }
+}
+
+.fonctionnement {
+    .etapes-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .etape {
+            width: 100%;
+            margin-left: -1em;
+            display: flex;
+            align-items: center;
+            #num {
+                position: relative;
+                left: 1em;
+                .fa-circle {
+                    color: $color-primary;
+                }
+            }
+            p {
+                i {
+                    color: $color-dark;
+                    margin: 0.5em 1em;
+                }
+                text-align: left;
+                width: 100%;
+                padding: 1em;
+                background-color: $color-light;
+                color: $color-darkest;
+                border-radius: 1em;
+                box-shadow: $shadow-primary;
+            }
+        }
+    }
+}
+
+.restaurants {
+    background-color: $color-light;
 }
