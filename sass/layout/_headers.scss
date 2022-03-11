@@ -1,5 +1,12 @@
 header {
-    padding: 1em 5%;
+    padding: $padding-centre;
     display: flex;
     justify-content: center;
+    .header-resto {
+        display: flex;
+        align-items: baseline;
+        i {
+            color: $color-dark;
+        }
+    }
 }

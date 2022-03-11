@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P3|ohmyfood x OC x Ana Oliveira</title>
     <link rel="shortcut icon" href="../assets/logo/omf-gradient-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../sass/pages/_restaurants.scss">
+    <link rel="stylesheet" href="../sass/style.css">
     <script src="https://kit.fontawesome.com/f25ea915b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +17,9 @@
         <img src="../assets/logo/ohmyfood@2x.svg" alt="logo 'ohmyfood'">
     </header>
     <main>
-        <img src="../assets/restaurants/lapalettedgout.jpg" alt="photo de plat gourmet">
+        <div class="menu-cover">
+            <img src="../assets/restaurants/lapalettedgout.jpg" alt="photo de plat gourmet">
+        </div>
         <div class="main-menu-wrapper">
             <div class="title-wrapper">
                 <h1>La palette du goût</h1>
@@ -32,8 +33,8 @@
                         <p>Au piment d'Espelette</p>
                     </div>
                     <div class="m-price"><p>25€</p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
                 </article>
+                <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
                 <article class="m-card">
                     <div class="m-text">
                         <h3>Foie gras de canard mi-cuit</h3> 
@@ -105,7 +106,9 @@
                     <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
                 </article>
             </div>
-            <button class="btn-gradient">Comparer</button>
+            <div class="btn-wrapper">
+                <button class="btn-gradient">Comparer</button>
+            </div>
         </div>
     </main>
     <footer>
