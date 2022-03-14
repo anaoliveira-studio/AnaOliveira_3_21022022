@@ -1,5 +1,9 @@
 .menu-cover {
     width: 100vw;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     img {
         width: 100%;
         object-fit: cover;
@@ -7,6 +11,8 @@
 }
 
 .main-menu-wrapper {
+    z-index: 1;
+    position: relative;
     background-color: $color-light;
     border-radius: 2em 2em 0 0;
     padding: $padding-centre;
@@ -36,7 +42,7 @@
     }
 }
 
-h2 {
+.main-menu-wrapper h2 {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 1em;
@@ -44,9 +50,11 @@ h2 {
     margin: 1em 0;
     &::after {
         content: "";
+        display: block;
         position: absolute;
         left: 0;
         bottom: 0;
+        padding-top: 1em;
         width: 2.5em;
         border-bottom: thick solid $color-accent;
     }
