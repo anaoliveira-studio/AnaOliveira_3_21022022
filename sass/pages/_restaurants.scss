@@ -1,9 +1,6 @@
 .menu-cover {
     width: 100vw;
     z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
     img {
         width: 100%;
         object-fit: cover;
@@ -13,6 +10,7 @@
 .main-menu-wrapper {
     z-index: 1;
     position: relative;
+    top: -50px;
     background-color: $color-light;
     border-radius: 2em 2em 0 0;
     padding: $padding-centre;
@@ -47,13 +45,12 @@
     font-weight: 100;
     font-size: 1em;
     position: relative;
-    margin: 1em 0;
     &::after {
         content: "";
         display: block;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -0.5em;
         padding-top: 1em;
         width: 2.5em;
         border-bottom: thick solid $color-accent;
@@ -62,7 +59,6 @@
 
 .m-card{
     background-color: $color-clear;
-    padding: 1em 0 1em 5%;
     box-shadow: $shadow-primary;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -71,27 +67,28 @@
     align-items: flex-end;
     flex-wrap: nowrap;
     .m-text {
+        padding: 1em 0.5em;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
         h3, p {
             margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     .m-price {
-        padding: 0 5%;
+        padding: 1em 0.5em;
         p {
             margin: 0;
             font-weight: 600;
         }
     }  
+    .m-icon {
+        display: none;
+        align-self: center;
+        background-color: $color-accent;
+        i {
+            color: $color-clear;
+        }
+    }    
 }
-
-.m-icon {
-    display: none;
-    align-self: center;
-    background-color: $color-accent;
-    i {
-        color: $color-clear;
-    }
-}    

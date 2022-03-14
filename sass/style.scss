@@ -15,6 +15,11 @@
     justify-content: center;
     background-color: darken($color-light, 5%);
     color: $color-dark;
+    h2 {
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
 }
 
 .presentation {
@@ -42,9 +47,10 @@
         .etape {
             width: 100%;
             margin-left: -1em;
+            margin-bottom: 1.5em;
             display: flex;
             align-items: center;
-            #num {
+            .num {
                 position: relative;
                 left: 1em;
                 .fa-circle {
