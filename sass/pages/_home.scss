@@ -1,0 +1,69 @@
+.localisation {
+    padding: 0.5em 5%;
+    display: flex;
+    justify-content: center;
+    border-top: 3px inset rgba(35,35,35,0.1);
+    background-color: darken($color-light, 5%);
+    color: $color-dark;
+    h2 {
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+}
+
+.presentation {
+    background-color: $color-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1, p {
+        text-align: center;
+    }
+    h1 {
+        color: $color-darkest;
+    }
+    p{
+        color: $color-dark;
+    }
+}
+
+.fonctionnement {
+    .etapes-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .etape {
+            width: 100%;
+            margin-left: -1em;
+            margin-bottom: 1.5em;
+            display: flex;
+            align-items: center;
+            .num {
+                position: relative;
+                left: 1em;
+                .fa-circle {
+                    color: $color-primary;
+                }
+            }
+            p {
+                i {
+                    color: $color-dark;
+                    margin: 0.5em 1em;
+                }
+                text-align: left;
+                width: 100%;
+                padding: 1em;
+                background-color: $color-light;
+                color: $color-darkest;
+                border-radius: 1em;
+                box-shadow: $shadow-primary;
+            }
+        }
+    }
+}
+
+.restaurants {
+    background-color: $color-light;
+}
