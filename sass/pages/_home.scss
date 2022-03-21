@@ -59,6 +59,12 @@
                 color: $color-darkest;
                 border-radius: 1em;
                 box-shadow: $shadow-primary;
+                &:hover {
+                    background-color: lighten($color-primary, 30%);
+                    i {
+                        color: $color-primary;
+                    }
+                }
             }
         }
     }

@@ -1,4 +1,5 @@
 .btn-gradient {
+    z-index: -2;
     font-family: 'Roboto';
     font-size: 1.2em;
     border: none;
@@ -10,7 +11,9 @@
     background: $color-btn-gradient;
     color: $color-clear;
     box-shadow: $shadow-primary;
+    cursor: pointer;
     &:hover {
-        background-color: lighten($color-btn-gradient, 30%);
+        mix-blend-mode: hard-light;
+        color: $color-dark;
     }
 }

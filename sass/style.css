@@ -126,6 +126,7 @@ footer h3 {
 }
 
 .btn-gradient {
+  z-index: -2;
   font-family: 'Roboto';
   font-size: 1.2em;
   border: none;
@@ -134,15 +135,16 @@ footer h3 {
   margin: 2em 0;
   font-family: 'Roboto';
   font-size: 1.2em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(340deg, #9356dc 0%, #ff79da 100%);
   color: #fff;
   -webkit-box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .btn-gradient:hover {
-  background-color: white;
+  mix-blend-mode: hard-light;
+  color: #353535;
 }
 
 .localisation {
@@ -239,6 +241,14 @@ footer h3 {
 .fonctionnement .etapes-wrapper .etape p i {
   color: #353535;
   margin: 0.5em 1em;
+}
+
+.fonctionnement .etapes-wrapper .etape p:hover {
+  background-color: #e4d5f6;
+}
+
+.fonctionnement .etapes-wrapper .etape p:hover i {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -341,6 +351,8 @@ footer h3 {
           align-items: flex-end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-animation: plate-slide 2s ease-in-out .25s 1 forwards none;
+          animation: plate-slide 2s ease-in-out .25s 1 forwards none;
 }
 
 .m-card .m-text {
@@ -366,14 +378,58 @@ footer h3 {
 
 .m-card .m-icon {
   display: none;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 73px;
+  height: 73px;
+  border-radius: 0 1em 1em 0;
   background-color: #99E2D0;
+  display: none;
 }
 
 .m-card .m-icon i {
   color: #fff;
+}
+
+.m-card:hover {
+  -webkit-transition: ease-in 2s;
+  transition: ease-in 2s;
+}
+
+.m-card:hover .m-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes plate-slide {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes plate-slide {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1312px) {
