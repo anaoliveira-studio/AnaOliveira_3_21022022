@@ -12,7 +12,7 @@
 .main-menu-wrapper {
     z-index: 1;
     position: relative;
-    top: -10em;
+    margin-top: -3em;
     background-color: $color-light;
     border-radius: 2em 2em 0 0;
     padding: 0.3em 5%;
@@ -69,7 +69,8 @@
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: nowrap;
-    animation: plate-slide 2s ease-in-out .25s 1 forwards none;
+    //animation: plate-slide 2s ease-in-out .25s 1 forwards none;
+    animation: plate-slide 2s ease-in;
     .m-text {
         padding: 1em 0.5em;
         white-space: nowrap;
@@ -110,11 +111,11 @@
 
 @keyframes plate-slide {
     from { 
-        transform: translateY(0%);
+        transform: translateY(10%);
         opacity: 0;
     }
     to {
-        transform: translateY(100%);
+        transform: translateY(0%);
         opacity: 1;
     }
 }

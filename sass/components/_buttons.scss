@@ -13,7 +13,8 @@
     box-shadow: $shadow-primary;
     cursor: pointer;
     &:hover {
-        mix-blend-mode: hard-light;
-        color: $color-dark;
+        transition-delay: .3s;
+        filter: brightness(1.1);
+        box-shadow: $shadow-blurry;
     }
 }
