@@ -61,6 +61,7 @@
 }
 
 .m-card{
+    cursor: pointer;
     background-color: $color-clear;
     box-shadow: $shadow-primary;
     border-radius: 1em;
@@ -69,7 +70,6 @@
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: nowrap;
-    //animation: plate-slide 2s ease-in-out .25s 1 forwards none;
     animation: plate-slide 2s ease-in;
     .m-text {
         padding: 1em 0.5em;
@@ -111,7 +111,7 @@
 
 @keyframes plate-slide {
     from { 
-        transform: translateY(10%);
+        transform: translateY(20%);
         opacity: 0;
     }
     to {

@@ -1,11 +1,78 @@
-@media (min-width: 688px) {}
+@media (min-width: 688px) {
+    .fonctionnement {
+        .etapes-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            .etape {
+                width: 48%;
+            }
+        }
+    }
 
-@media (min-width: 992px) {}
+    .resto-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            width: 49%;
+            margin-bottom: 2%;
+        }
+    }
+
+    .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .menu-wrapper {
+            width: 32%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .fonctionnement {
+        .etapes-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .etape {
+                width: 32%;
+            }
+        }
+    }
+
+    .resto-wrapper a {
+        width: 24%;
+    }
+    .flex-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .menu-wrapper {
+            width: 32%;
+        }
+    }
+}
 
 @media (min-width: 1312px) {
     body {
         width: 1312px;
         margin: 0 auto;
+    }
+
+    .localisation {
+        border-radius: 2em 2em 0 0;
+    }
+
+    .presentation {
+        border-radius: 0 0 2em 2em;
+        //margin: 0 0 1em;
+    }
+
+    .restaurants {
+        border-radius: 2em;
+        margin-bottom: 2em;
     }
 
     .menu-cover {
