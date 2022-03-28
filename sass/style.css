@@ -167,6 +167,7 @@ footer h3 {
 
 .fa-heart::after {
   content: "\f004";
+  padding: 0 0.5em;
   position: absolute;
   top: 0;
   right: 0;
