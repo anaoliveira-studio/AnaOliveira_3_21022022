@@ -12,8 +12,8 @@
     color: $color-clear;
     box-shadow: $shadow-primary;
     cursor: pointer;
+    transition-delay: .3s;
     &:hover {
-        transition-delay: .3s;
         filter: brightness(1.1);
         box-shadow: $shadow-blurry;
     }
