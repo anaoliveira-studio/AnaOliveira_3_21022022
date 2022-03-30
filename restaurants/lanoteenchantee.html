@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P3|ohmyfood x OC x Ana Oliveira</title>
     <link rel="shortcut icon" href="../assets/logo/omf-gradient-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../sass/style.css">
     <script src="https://kit.fontawesome.com/f25ea915b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,139 +17,169 @@
         <img src="../assets/logo/ohmyfood@2x.svg" alt="logo 'ohmyfood'">
     </header>
     <main>
-        <img src="../assets/restaurants/lanoteenchantee.jpg" alt="photo de plat gourmet">
+        <div class="menu-cover">
+            <img src="../assets/restaurants/lanoteenchantee.jpg" alt="photo de plat gourmet">
+        </div>
         <div class="main-menu-wrapper">
             <div class="title-wrapper">
                 <h1>La note enchantée</h1>
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <h2>Entrées</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
+            <div class="flex-wrapper">
+                <div class="menu-wrapper">
+                    <h2>Entrées</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Ravioles de foie gras</h3> 
+                                <p>Accompagnés de leur crème à la truffe</p>
+                            </div>
+                            <div class="m-price">
+                                <p>25€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Caviar osciètre</h3> 
+                                <p>Sur blini à la farine de blé noir</p>
+                            </div>
+                            <div class="m-price">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Homard et espuma de potiron</h3> 
+                                <p>Mariné aux zestes d'orange</p>
+                            </div>
+                            <div class="m-price">
+                                <p>20€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Foie gras de canard cuit entier</h3> 
+                                <p>Confiture de figue et pain toasté</p>
+                            </div>
+                            <div class="m-price">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="menu-wrapper">
+                    <h2>Plats</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Noix de coquilles Saint-Jacques</h3> 
+                                <p>Sur lit de purée de céleri-rave</p>
+                            </div>
+                            <div class="m-price">
+                                <p>40€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Langoustine poêlée</h3> 
+                                <p>Purée de patate douce</p>
+                            </div>
+                            <div class="m-price">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Mijoté de queue de boeuf</h3> 
+                                <p>Et riz sauvage aux zestes de citron</p>
+                            </div>
+                            <div class="m-price">
+                                <p>44€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="menu-wrapper">
+                    <h2>Desserts</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Macaron noisette et chocolat</h3> 
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                            </div>
+                            <div class="m-price">
+                                <p>18€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Baba au rhum revisité</h3> 
+                                <p>Avec son coulis de citron</p>
+                            </div>
+                            <div class="m-price">
+                                <p>22€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Tarte au citron meringuée</h3> 
+                                <p>Déstructurée</p>
+                            </div>
+                            <div class="m-price">
+                                <p>23€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <h2>Plats</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
+            <div class="btn-wrapper">
+                <a href="#"><button class="btn-gradient">Commander</button></a>
             </div>
-            <h2>Desserts</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-            </div>
-            <button class="btn-gradient">Comparer</button>
         </div>
-
-Entrées
-Ravioles de foie gras 
-Accompagnés de leur crème à la truffe
-25€
-
-Caviar osciètre 
-Sur blini à la farine de blé noir
-35€
-
-Homard et espuma de potiron
-Mariné aux zestes d'orange
-20€
-
-Foie gras de canard cuit entier
-Confiture de figue et pain toasté
-35€
-        
-Plats
-Noix de coquilles Saint-Jacques
-Sur lit de purée de céleri-rave
-40€
-
-Langoustine poêlée
-Purée de patate douce
-35€
-
-Mijoté de queue de boeuf 
-Et riz sauvage aux zestes de citron
-44€
-
-Desserts
-Macaron noisette et chocolat
-Glace au caramel brun et sel de Guérande
-18€
-
-Baba au rhum revisité 
-Avec son coulis de citron
-22€
-
-Tarte au citron meringuée 
-Déstructurée
-23€
-
     </main>
     <footer>
         <h3>ohmyfood</h3>

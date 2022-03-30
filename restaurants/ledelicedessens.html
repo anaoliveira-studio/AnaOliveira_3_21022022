@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P3|ohmyfood x OC x Ana Oliveira</title>
     <link rel="shortcut icon" href="../assets/logo/omf-gradient-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../sass/style.css">
     <script src="https://kit.fontawesome.com/f25ea915b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,135 +17,155 @@
         <img src="../assets/logo/ohmyfood@2x.svg" alt="logo 'ohmyfood'">
     </header>
     <main>
-        <img src="../assets/restaurants/ledelicedessens.jpg" alt="photo de plat gourmet">
+        <div class="menu-cover">
+            <img src="../assets/restaurants/ledelicedessens.jpg" alt="photo de plat gourmet">
+        </div>
         <div class="main-menu-wrapper">
             <div class="title-wrapper">
                 <h1>Le délice des sens</h1>
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <h2>Entrées</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
+            <div class="flex-wrapper">
+                <div class="menu-wrapper">
+                    <h2>Entrées</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Tartare de thon</h3>  
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="m-price">
+                                <p>25€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Bouchée de homard croustillant</h3> 
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="m-price">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Velouté de cèpes</h3> 
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="m-price">
+                                <p>20€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="menu-wrapper">
+                    <h2>Plats</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Poulet rôti aux herbes de Provence</h3> 
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="m-price">
+                                <p>40€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Langouste rôtie</h3> 
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="m-price">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Côte de boeuf Angus</h3> 
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="m-price">
+                                <p>44€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+                <div class="menu-wrapper">
+                    <h2>Desserts</h2>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Farandole de desserts</h3> 
+                                <p>Du chef</p>
+                            </div>
+                            <div class="m-price">
+                                <p>18€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Crème brûlée</h3> 
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="m-price">
+                                <p>22€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="m-card">
+                        <div class="m-content">
+                            <div class="m-text">
+                                <h3>Tiramisu</h3> 
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="m-price">
+                                <p>23€</p>
+                            </div>
+                        </div>
+                        <div class="m-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <h2>Plats</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
+            <div class="btn-wrapper">
+                <a href="#"><button class="btn-gradient">Commander</button></a>
             </div>
-            <h2>Desserts</h2>
-            <div class="menu-wrapper">
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-                <article class="m-card">
-                    <div class="m-text">
-                        <h3></h3> 
-                        <p></p>
-                    </div>
-                    <div class="m-price"><p></p></div>
-                    <div class="m-icon"><i class="fa-solid fa-circle-check"></i></div>
-                </article>
-            </div>
-            <button class="btn-gradient">Comparer</button>
         </div>
-
-        Entrées
-        Tartare de thon
-        Assaisonné au yuzu
-        25€
-        
-        Bouchée de homard croustillant 
-        Et sa farandole de petits légumes
-        35€
-        
-        Velouté de cèpes 
-        Aux truffes
-        20€
-                
-        Plats
-        Poulet rôti aux herbes de Provence 
-        Et sa crème de truffe
-        40€
-        
-        Langouste rôtie 
-        Et ses légumes de saison
-        35€
-        
-        Côte de boeuf Angus 
-        Et sa purée de panais
-        44€
-        
-        Desserts
-        Farandole de desserts
-        Du chef
-        18€
-        
-        Crème brulée 
-        Revisitée
-        22€
-        
-        Tiramisu 
-        À la noisette
-        23€        
-
     </main>
     <footer>
         <h3>ohmyfood</h3>
