@@ -1,4 +1,4 @@
-@media (min-width: 688px) {
+@media (min-width: 768px) {
     .fonctionnement {
         .etapes-wrapper {
             display: flex;
@@ -28,9 +28,20 @@
             width: 32%;
         }
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .fonctionnement {
         .etapes-wrapper {
             display: flex;
@@ -57,20 +68,31 @@
 
     footer {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
         ul {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: flex-end;
             align-items: center;
+            li {
+                padding-left: 1em;
+            }
         }
     }
 }
 
-@media (min-width: 1312px) {
+@media (min-width: 1440px) {
     body {
         width: 1312px;
         margin: 0 auto;
+    }
+
+    header a i {
+        position: relative;
+        right: 3700%;
+        left: unset;
+        top: 50%;
     }
 
     .localisation {
@@ -105,5 +127,6 @@
 
     footer {
         border-radius: 2em;
+        margin-bottom: 0.5em;
     }
 }
