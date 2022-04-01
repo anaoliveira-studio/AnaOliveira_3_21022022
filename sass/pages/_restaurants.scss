@@ -114,7 +114,6 @@
         i {
             color: $color-clear;
             font-size: 1.5em;
-            //width: 0em;
             opacity: 0;
             transition: opacity 200ms;
         }
@@ -128,7 +127,6 @@
             width: 20%;
             i {
                 opacity: 1;
-                //width: 1em;
                 animation: rotation 1000ms 1 linear;
             }
         }
