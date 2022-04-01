@@ -110,12 +110,12 @@
         height: 73px;
         width: 0%;
         opacity: 0;
-        transition: width 500ms, opacity 200ms;
+        transition: width 1000ms, opacity 1000ms;
         i {
             color: $color-clear;
             font-size: 1.5em;
             opacity: 0;
-            transition: opacity 200ms;
+            transition: opacity 1000ms;
         }
     }
     &:hover {
